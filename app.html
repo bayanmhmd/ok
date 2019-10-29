@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Booking A Movie Ticket </title>
+    <link rel="stylesheet" href="css/Booking.css">
+    <!-- <link rel="stylesheet" href="css/HomePage.css"> -->
+
+
+</head>
+
+<body>
+
+    <!-- Searching Bar  -->
+    <div id="search">
+        <p>|<a href="homepage.html">Umbrella Cinema</a>|Search: <input type="text" /></p>
+    </div>
+
+    <!-- Header Banner  -->
+    <div class="transluscent-mat">
+        <header>
+            <div class="header">
+                <div id="bannerimage">
+                    <img id="bannerjpg" src="images/Umbrella.jpg" alt="Umbrella Cinema" />
+                </div>
+                <div id="bannerlogo">
+                    <a class="homelink" href="homepage.html">
+                        <h1>UMBRELLA CINEMA</h1>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <div class="shiftup">
+            <!--Navigation menu-->
+            <nav>
+                <ul class="navigation">
+                    <li class="nav">
+                        <a href="homepage.html"> Home Page</a>
+                    </li>
+                    <li class="nav">
+                        <a href="showing-now.html">Now Showing</a>
+                    </li>
+                    <li class="nav">
+                        <a href="Movies.html"> All Movies</a>
+                    </li>
+                    <li class="nav">
+                        <a href="Booking.html" id="currentlink">Booking a Ticket</a>
+                    </li>
+                    <li class="nav">
+                        <a href="Cinema-Locations.html">Cinema Locations</a>
+                    </li>
+                    <li class="nav">
+                        <a href="About-Us.html">About Us </a>
+                    </li>
+                </ul>
+            </nav>
+
+            </header>
+
+
+            <main>
+
+                <h1> Book a Ticket For Your chosen Movie </h1>
+
+
+                <form id="formArea-Movies">
+                    <!-- fieldset : to group all information in one place as you like to divided your web pages  -->
+                    <fieldset>
+                        <!-- legend: to heading some info together  , every single text input -->
+                        <legend> The Needed Information To Book A Ticket </legend><br></br>
+
+                        <label>Your Name</label>
+                        <input type="text" name="name" placeholder='Enter Your First Name'>
+                        <br></br><br>
+
+                        <!-- label & input : to add the text input for each one  -->
+                        <label> Choose The Movie :</label>
+                        <select name="moviesSelect" size="1">
+                            <option value="Empty">-------</option>
+                            <option value="romantic">Romantic</option>
+                            <option value="horror">Horror</option>
+                            <option value="comedy">Comedy</option>
+                            <option value="action">Action</option>
+                            <option value="drama">Drama</option>
+
+                        </select><br></br><br>
+
+                        <label> Pick Your Favorite Seat Type : </label>
+                        <select name="seatKind" size="1">
+                            <option value="Empty">-------</option>
+                            <option value="a"> A </option>
+                            <option value="b"> B </option>
+                            <option value="c"> C </option>
+                            <option value="d"> D </option>
+                            <option value="f"> F </option>
+                            <option value="vip"> VIP </option>
+                        </select><br></br><br>
+
+                        <label> Choose How many Seats You Want </label>
+                        <input type="number" name="seatsNum" placeholder="Enter Any Number (as maximum 3 ONLY)"
+                            style="width:300px"><br></br><br>
+                        <!-- <span>list the average by using colon </span> -->
+                    </fieldset>
+                    <br></br>
+                    <button type="submit"> Click To Buy A Ticket </button>
+                </form>
+
+                <!-- Time Button -->
+                <div class="Time-Button">
+                    <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+                        Click me to display Date and Time.</button>
+
+                    <p id="demo"></p>
+                </div>
+
+
+                <section>
+                    <h3> The Movie Details </h3>
+                    <p id="Movie-Details">
+
+                    </p>
+                </section>
+
+
+
+                <section id="cinemaSeat">
+                  
+
+
+                  </section>
+            </main>
+
+
+
+            <footer> copyright Umbrella @ 2019 </footer>
+            <script src="js/Booking.js"></script>
+                <script src="js/Booking-Update.js"></script>
+
+
+</body>
+
+</html>
